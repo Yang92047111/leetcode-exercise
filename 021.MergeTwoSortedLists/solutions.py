@@ -27,8 +27,10 @@ if __name__ == '__main__':
     def list_to_linked_list(nums):
         if not nums:
             return None
+        
         head = ListNode(nums[0])
         current = head
+
         for num in nums[1:]:
             current.next = ListNode(num)
             current = current.next
@@ -42,6 +44,7 @@ if __name__ == '__main__':
         while current1 and current2:
             if current1.val != current2.val:
                 return False
+            
             current1 = current1.next
             current2 = current2.next
         
