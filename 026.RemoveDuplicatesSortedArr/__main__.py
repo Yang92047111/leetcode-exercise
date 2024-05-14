@@ -13,7 +13,7 @@ if __name__ == '__main__':
     def validLength(nums, ans, expected):
         assert(ans == len(expected))
         for i in range(ans):
-            assert( nums[i] == expected[i])
+            assert(nums[i] == expected[i])
 
     sol = Solution()
 
